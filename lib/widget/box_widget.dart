@@ -6,21 +6,19 @@ class BoxWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: Colors.black54,
-      elevation: 0,
-      shape: ShapeBorder.lerp(
-        RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
-        RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
-        0,
-      ),
+    return Container(
+      height: 60,
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-      
-      child: Center(child: Text(title),),
+      decoration: BoxDecoration(
+        color: const Color.fromRGBO(41, 41, 40, 1),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Center(
+        child: Text(
+          title,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+      ),
     );
   }
 }
