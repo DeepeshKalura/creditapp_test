@@ -17,6 +17,22 @@ class _MyCreditScreenState extends State<MyCreditScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
+          elevation: 0,
+          leading: InkWell(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const CircleAvatar(
+              radius: 30,
+              backgroundColor: Color.fromARGB(139, 12, 28, 25),
+              child: Center(
+                child: Icon(
+                  Icons.arrow_back_ios,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
         ),
         body: SingleChildScrollView(
           child: Column(

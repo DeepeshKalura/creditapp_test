@@ -9,6 +9,8 @@ class DesignerTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(aboveText, style: Theme.of(context).textTheme.displaySmall),
         Text(belowText, style: Theme.of(context).textTheme.displayMedium),

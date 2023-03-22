@@ -19,6 +19,9 @@ class BottomSheetScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const SizedBox(
+              height: 70,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -30,7 +33,7 @@ class BottomSheetScreen extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all(Colors.white),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(20),
                           side: const BorderSide(
                             color: Color.fromRGBO(52, 223, 149, 1),
                           ),
@@ -60,7 +63,7 @@ class BottomSheetScreen extends StatelessWidget {
                       ),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(20),
                         ),
                       ),
                       fixedSize: MaterialStateProperty.all(

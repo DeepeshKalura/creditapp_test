@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'screen/credit_screen.dart';
+// import 'screen/credit_screen.dart';
+import 'screen/home_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor: const Color.fromRGBO(29, 28, 29, 1),
+        iconTheme: const IconThemeData().copyWith(
+          color: Colors.white,
+        ),
         textTheme: TextTheme(
           bodyMedium: const TextStyle(
             color: Colors.white,
@@ -54,7 +58,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const MyCreditScreen(),
+      home: const HomeScreen(),
     );
   }
 }
